@@ -34,6 +34,9 @@
                     fontFamily: {
                         manrope: ["Manrope", "sans-serif"],
                     },
+                    colors: {
+                       'tertiary-color' : '#FF4240',
+                    },
                 }
             }
         }
@@ -42,9 +45,20 @@
 
     <!-- Tailwind CSS Layer Starts Here -->
     <style type="text/tailwindcss">
-         @layer base {
+         @layer base{
             html {
                 font-family: 'Manrope', sans-serif;
+            }
+        }
+        @layer components{
+            .navbar-link{
+                @apply text-[#424247] xl:text-base font-normal duration-500 ease-in-out hover:text-tertiary-color;
+            }
+            .active{
+                @apply text-tertiary-color;
+            }
+            .primary-button{
+                @apply py-3 xl:py-4 px-4 xl:px-6 bg-tertiary-color border border-tertiary-color rounded-lg text-white text-base xl:text-xl font-bold duration-500 ease-in-out hover:bg-white hover:text-tertiary-color;
             }
         }
     </style>
@@ -52,20 +66,89 @@
 </head>
 <body>
     <!-- Header Starts Here -->
-    <header>
+    <header class="px-3 xl:px-5 pt-5 xl:pt-10 xl:pb-32">
+        <div class="container mx-auto">
+            <!-- Nav Starts Here -->
+            <nav class="flex justify-between items-center pb-6 xl:pb-12">
+                <!-- Navbar Left Starts Here -->
+                <div>
+                    <div class="flex items-center">
+                        <div class="me-4 block lg:hidden">
+                            <div class="drawer drawer-end">
+                                <input id="hamburger" type="checkbox" class="drawer-toggle">
+                                <div class="drawer-content">
+                                  <!-- Page content here -->
+                                  <label for="hamburger" class="cursor-pointer">
+                                    <img src="assets/images/icons/header/hamburger.png" alt="Icon" class="h-[20px] w-[20px]">
+                                  </label>
+                                </div> 
+                                <div class="drawer-side overflow-hidden z-10">
+                                  <label for="hamburger" aria-label="close sidebar" class="drawer-overlay"></label>
+                                  <ul class="menu p-4 w-[80%] min-h-full bg-base-200 text-base-content gap-y-4">
+                                    <li>
+                                        <a href="index.html" class="navbar-link active">Home</a>
+                                    </li>
+                                    <li><a href="#" class="navbar-link">About</a></li>
+                                    <li><a href="#" class="navbar-link">Pages</a></li>
+                                    <li><a href="#" class="navbar-link">Blog</a></li>
+                                    <li><a href="#" class="navbar-link">Contact</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="index.html" class="inline-block lg:hidden pt-2">
+                                <img src="assets/images/logo.png" alt="Logo" class="max-w-full h-auto">
+                            </a>
+                            <a href="index.html" class="hidden lg:inline-block pt-2">
+                                <img src="assets/images/logo-lg.png" alt="Logo" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Left Ends Here -->
 
+                <!-- Navbar Links Starts Here -->
+                <div class="hidden lg:block">
+                    <ul class="flex items-center gap-11">
+                        <li><a href="index.html" class="navbar-link active">Home</a></li>
+                        <li><a href="#" class="navbar-link">About</a></li>
+                        <li><a href="#" class="navbar-link">Pages</a></li>
+                        <li><a href="#" class="navbar-link">Blog</a></li>
+                        <li><a href="#" class="navbar-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Navbar Links Ends Here -->
+
+                <!-- Navbar Right Starts Here -->
+                <div>
+                    <div class="flex items-center">
+                        <div class="me-6 text-2xl text-[#89898B] cursor-pointer hidden lg:block">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)" class="primary-button">
+                                Get Ticket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Right Ends Here -->
+            </nav>
+            <!-- Nav Ends Here -->
+        </div>
     </header>
     <!-- Header Ends Here --> 
 
     <!-- Main Content Starts Here --> 
-    <main>
+    <main class="px-3 xl:px-5">
 
     </main>
     <!-- Main Content Ends Here --> 
 
     <!-- Footer Starts Here --> 
-    <footer>
-        
+    <footer class="px-3 xl:px-5">
+
     </footer>
     <!-- Footer Ends Here --> 
 </body>
