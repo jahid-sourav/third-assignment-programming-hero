@@ -25,6 +25,7 @@
     <!-- Tailwind CSS CDN Link Starts Here -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS CDN Link Ends Here -->
+    <link rel="stylesheet" href="assets/styles/custom.css">
 
     <!-- Tailwind CSS Config Starts Here -->
     <script>
@@ -60,13 +61,37 @@
             .primary-button{
                 @apply py-3 xl:py-4 px-4 xl:px-6 bg-tertiary-color border border-tertiary-color rounded-lg text-white text-base xl:text-xl font-bold duration-500 ease-in-out hover:bg-white hover:text-tertiary-color;
             }
+            .section-gap{
+                @apply pt-10 xl:pt-[100px];
+            }
+            .section-header{
+                @apply py-4 xl:py-8 mb-6 xl:mb-12 border border-dashed border-[#13131833] border-x-0 text-center;
+            }
+            .section-header-title{
+                @apply text-[#131318] font-extrabold text-xl md:text-2xl xl:text-4xl mb-3 xl:mb-6;
+            }
+            .section-header-description{
+                @apply max-w-full md:max-w-[607px] mx-auto text-[#13131899] text-sm md:text-base font-medium;
+            }
+            .progress-card{
+                @apply flex flex-col items-center text-center;
+            }
+            .progress-card-title{
+                @apply text-[#131318] text-lg xl:text-xl font-semibold;
+            }
+            .progress-card-number{
+                @apply xl:text-3xl font-extrabold;
+            }
+            .progress-card-description{
+                @apply text-[#13131899] font-normal text-sm sm:text-base mx-auto xl:max-w-[250px];
+            }
         }
     </style>
     <!-- Tailwind CSS Layer Ends Here -->
 </head>
 <body>
     <!-- Header Starts Here -->
-    <header class="px-3 xl:px-5 pt-5 xl:pt-10 xl:pb-32">
+    <header class="px-3 xl:px-5 pt-5 xl:pt-10">
         <div class="container mx-auto">
             <!-- Nav Starts Here -->
             <nav class="flex justify-between items-center pb-6 xl:pb-12">
@@ -193,17 +218,83 @@
     <!-- Main Content Starts Here --> 
     <main class="px-3 xl:px-5">
         <!-- Banner Content Starts Here -->
-        <section class="container mx-auto">
-            <div class="mt-4 block lg:hidden p-4 sm:p-6 md:p-8 rounded-2xl bg-[#131318]">
-                <h3 class="mb-2 text-white text-lg font-extrabold">
-                    Meet all the heroes from the field
-                </h3>
-                <p class="text-[#ffffff99] text-sm font-medium">
-                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
-                </p>
+        <section class="">
+            <div class="container mx-auto">
+                <div class="mt-4 block lg:hidden p-4 sm:p-6 md:p-8 rounded-2xl bg-[#131318]">
+                    <h3 class="mb-2 text-white text-lg font-extrabold">
+                        Meet all the heroes from the field
+                    </h3>
+                    <p class="text-[#ffffff99] text-sm font-medium">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
             </div>
         </section>
         <!-- Banner Content Ends Here -->
+
+        <!-- Progress Area Starts Here -->
+        <section class="section-gap">
+            <div class="container mx-auto">
+                <!-- Section Header Starts Here -->
+                <div class="section-header">
+                    <h2 class="section-header-title">Professional Hockeys Club</h2>
+                    <p class="section-header-description">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
+                <!-- Section Header Ends Here -->  
+
+                <!-- Section Content Starts Here -->   
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 xl:px-8">
+                    <div class="progress-card">
+                        <div class="radial-progress rotate-[130deg] text-[#ff4240]" style="--value:87; --size:120px;" role="progressbar">
+                            <span class="-rotate-[130deg] progress-card-number text-[#131318]">
+                                87%
+                            </span>
+                        </div>
+                        <h5 class="progress-card-title mt-6 mb-4">Prayer Facility</h5>
+                        <p class="progress-card-description">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+                    <div class="progress-card">
+                        <div class="radial-progress rotate-[130deg] text-[#49d293]" style="--value:95; --size:120px;" role="progressbar">
+                            <span class="-rotate-[130deg] progress-card-number text-[#131318]">
+                                95%
+                            </span>
+                        </div>
+                        <h5 class="progress-card-title mt-6 mb-4">Experienced Coach</h5>
+                        <p class="progress-card-description">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+                    <div class="progress-card">
+                        <div class="radial-progress rotate-[130deg] text-[#ffb546]" style="--value:90; --size:120px;" role="progressbar">
+                            <span class="-rotate-[130deg] progress-card-number text-[#131318]">
+                                90%
+                            </span>
+                        </div>
+                        <h5 class="progress-card-title mt-6 mb-4">Senior Player</h5>
+                        <p class="progress-card-description">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+                    <div class="progress-card">
+                        <div class="radial-progress rotate-[130deg] text-[#4c8df1]" style="--value:80; --size:120px;" role="progressbar">
+                            <span class="-rotate-[130deg] progress-card-number text-[#131318]">
+                                80%
+                            </span>
+                        </div>
+                        <h5 class="progress-card-title mt-6 mb-4">Training Ground</h5>
+                        <p class="progress-card-description">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+                </div>             
+                <!-- Section Content Ends Here -->                
+            </div>
+        </section>
+        <!-- Progress Area Ends Here -->
     </main>
     <!-- Main Content Ends Here --> 
 
