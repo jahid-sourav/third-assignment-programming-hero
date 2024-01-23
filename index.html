@@ -97,6 +97,36 @@
             .program-card-description{
                 @apply mt-3 mb-4 xl:mt-4 xl:mb-6 text-white text-sm xl:text-base font-medium lg:max-w-[500px];
             }
+            .product-card{
+                @apply p-4 xl:p-6 border border-[#13131880] rounded-2xl flex gap-3 xl:gap-5 items-center flex-col sm:flex-row md:flex-col lg:flex-row justify-center sm:justify-start;
+            }
+            .product-card-info{
+                @apply flex gap-1 xl:gap-2;
+            }
+            .product-card-info-top{
+                @apply flex gap-3 xl:gap-4 justify-center sm:justify-start md:justify-center lg:justify-start;
+            }
+            .product-card-info-bottom{
+                @apply flex gap-2 xl:gap-5 justify-center sm:justify-start flex-wrap sm:flex-nowrap md:justify-center lg:justify-start items-center;
+            }
+            .product-card-info-bottom-right{
+                @apply flex items-center gap-2;
+            }
+            .product-card-info-bottom-right p{
+                @apply lg:text-sm xl:text-base;
+            }
+            .product-card-info-text{
+                @apply text-base font-medium;
+            }
+            .product-card-title{
+                @apply my-3 sm:inline-block text-[#131318] font-extrabold xl:text-xl duration-500 ease-in-out hover:text-tertiary-color flex justify-center sm:justify-start md:flex md:justify-center lg:inline-block lg:justify-start;
+            }
+            .product-card-description{
+                @apply text-base font-medium text-[#13131880] mb-3 xl:mb-4 md:max-w-[306px] text-center sm:text-left md:text-center lg:text-left;
+            }
+            .product-card-price{
+                @apply text-[#FF4240] text-base sm:text-base md:text-base lg:text-sm xl:text-lg font-extrabold;
+            }
         }
     </style>
     <!-- Tailwind CSS Layer Ends Here -->
@@ -369,6 +399,362 @@
             </div>
         </section>
         <!-- Program Area Ends Here -->
+
+        <!-- Products Area Starts Here -->
+        <section class="section-gap">
+            <div class="container mx-auto">
+                <!-- Section Header Starts Here -->
+                <div class="section-header">
+                    <h2 class="section-header-title">Our New Products</h2>
+                    <p class="section-header-description">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
+                <!-- Section Header Ends Here -->
+
+                <!-- Section Content Starts Here -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="product-card">
+                        <div>
+                            <a href="javascript:void(0)" class="inline-block">
+                                <img src="assets/images/products/01.png" alt="Product Image" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product-card-info-top">
+                                <div class="product-card-info">
+                                    <span class="text-[#F99808]">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="product-card-info-text text-[#13131880]">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="product-card-title">
+                                    World Cup Flags Football
+                                </a>
+                            </div>
+                            <p class="product-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. 
+                            </p>
+                            <div class="product-card-info-bottom">
+                                <h5 class="product-card-price">
+                                    Price - $22.00
+                                </h5>
+                                <div class="text-[#13131880] product-card-info-bottom-right">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <p class="product-card-description mb-0">
+                                        Delivery Fee : Free
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div>
+                            <a href="javascript:void(0)" class="inline-block">
+                                <img src="assets/images/products/02.png" alt="Product Image" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product-card-info-top">
+                                <div class="product-card-info">
+                                    <span class="text-[#F99808]">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="product-card-info-text text-[#13131880]">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="product-card-title">
+                                    World Cup Flags Football
+                                </a>
+                            </div>
+                            <p class="product-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. 
+                            </p>
+                            <div class="product-card-info-bottom">
+                                <h5 class="product-card-price">
+                                    Price - $22.00
+                                </h5>
+                                <div class="text-[#13131880] product-card-info-bottom-right">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <p class="product-card-description mb-0">
+                                        Delivery Fee : Free
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div>
+                            <a href="javascript:void(0)" class="inline-block">
+                                <img src="assets/images/products/03.png" alt="Product Image" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product-card-info-top">
+                                <div class="product-card-info">
+                                    <span class="text-[#F99808]">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="product-card-info-text text-[#13131880]">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="product-card-title">
+                                    Cap For Hockeys
+                                </a>
+                            </div>
+                            <p class="product-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. 
+                            </p>
+                            <div class="product-card-info-bottom">
+                                <h5 class="product-card-price">
+                                    Price - $22.00
+                                </h5>
+                                <div class="text-[#13131880] product-card-info-bottom-right">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <p class="product-card-description mb-0">
+                                        Delivery Fee : Free
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div>
+                            <a href="javascript:void(0)" class="inline-block">
+                                <img src="assets/images/products/04.png" alt="Product Image" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product-card-info-top">
+                                <div class="product-card-info">
+                                    <span class="text-[#F99808]">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="product-card-info-text text-[#13131880]">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="product-card-title">
+                                    World Cup Flags Football
+                                </a>
+                            </div>
+                            <p class="product-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. 
+                            </p>
+                            <div class="product-card-info-bottom">
+                                <h5 class="product-card-price">
+                                    Price - $22.00
+                                </h5>
+                                <div class="text-[#13131880] product-card-info-bottom-right">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <p class="product-card-description mb-0">
+                                        Delivery Fee : Free
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div>
+                            <a href="javascript:void(0)" class="inline-block">
+                                <img src="assets/images/products/05.png" alt="Product Image" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product-card-info-top">
+                                <div class="product-card-info">
+                                    <span class="text-[#F99808]">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="product-card-info-text text-[#13131880]">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="product-card-title">
+                                    World Cup Flags Football
+                                </a>
+                            </div>
+                            <p class="product-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. 
+                            </p>
+                            <div class="product-card-info-bottom">
+                                <h5 class="product-card-price">
+                                    Price - $22.00
+                                </h5>
+                                <div class="text-[#13131880] product-card-info-bottom-right">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <p class="product-card-description mb-0">
+                                        Delivery Fee : Free
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div>
+                            <a href="javascript:void(0)" class="inline-block">
+                                <img src="assets/images/products/06.png" alt="Product Image" class="max-w-full h-auto">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="product-card-info-top">
+                                <div class="product-card-info">
+                                    <span class="text-[#F99808]">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p class="product-card-info-text text-[#13131880]">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="product-card-info text-[#13131880]">
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <p class="product-card-info-text">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="product-card-title">
+                                    World Cup Flags Football
+                                </a>
+                            </div>
+                            <p class="product-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. 
+                            </p>
+                            <div class="product-card-info-bottom">
+                                <h5 class="product-card-price">
+                                    Price - $22.00
+                                </h5>
+                                <div class="text-[#13131880] product-card-info-bottom-right">
+                                    <span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </span>
+                                    <p class="product-card-description mb-0">
+                                        Delivery Fee : Free
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Content Ends Here -->
+            </div>
+        </section>
+        <!-- Products Area Ends Here -->
     </main>
     <!-- Main Content Ends Here --> 
 
