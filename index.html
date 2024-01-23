@@ -133,6 +133,46 @@
             .faq-text{
                 @apply text-[#13131899] text-sm xl:text-base font-normal lg:max-w-[518px];
             }
+            .contact-area-right{
+                @apply p-6 xl:p-12 border border-solid lg:border-dashed border-[#1313181a] rounded-2xl gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-1;
+            }
+            .contact-card{
+                @apply p-4 xl:p-8 rounded-2xl bg-[#bced6d1a];
+            }
+            .contact-card:nth-child(2){
+                @apply  bg-[#fddd5f1a];
+            }
+            .contact-card:nth-child(3){
+                @apply  bg-[#629cf31a];
+            }
+            .contact-card p{
+                @apply my-3 xl:mt-6 xl:mb-4 text-[#13131866] xl:text-base font-normal;
+            }
+            .contact-card a,
+            .contact-card h4{
+                @apply text-[#131318] xl:text-lg font-extrabold;
+            }
+            .contact-area-form label{
+                @apply text-[#131318] xl:text-xl font-bold block mb-4; 
+            }
+            .contact-area-form input{
+                @apply text-[#1313184d] xl:text-base font-normal block w-full bg-[#13131808] rounded-xl p-3 xl:p-5 outline-none; 
+            }
+            .contact-area-form textarea{
+                @apply text-[#1313184d] xl:text-base font-normal block w-full bg-[#13131808] rounded-xl p-3 xl:p-5 outline-none min-h-[200px] xl:min-h-[370px] resize-none; 
+            }
+            .s-media{
+                @apply bg-[#13131808] py-4 xl:py-8 rounded-xl mt-6 xl:mt-12 flex flex-col items-center;
+            }
+            .s-media h4{
+                @apply text-[#131318] text-lg xl:text-2xl font-extrabold mb-3 xl:mb-6; 
+            }
+            .s-media a{
+                @apply text-[#131318] text-xl xl:text-2xl inline-block me-6 duration-500 ease-in-out hover:text-tertiary-color;
+            }
+            .s-media a:last-child{
+                @apply me-0;
+            }
         }
     </style>
     <!-- Tailwind CSS Layer Ends Here -->
@@ -853,6 +893,117 @@
             </div>
         </section>
         <!-- FAQ Area Ends Here -->
+
+        <!-- Contact Area Starts Here -->
+        <section class="section-gap">
+            <div class="container mx-auto">
+                <!-- Section Header Starts Here -->
+                <div class="section-header">
+                    <h2 class="section-header-title">Get In Touch</h2>
+                    <p class="section-header-description">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
+                <!-- Section Header Ends Here -->
+
+                <!-- Section Content Starts Here -->
+                <div>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-start-1 col-end-13 xl:col-start-1 xl:col-end-6">
+                            <div class="contact-area-right">
+                                <div class="contact-card">
+                                    <div>
+                                        <img src="assets/images/icons/contact/01.png" alt="Icon" class="max-w-full h-auto">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Phone Number :
+                                        </p> 
+                                        <a href="tel:+62123-321-543" class="inline-block">
+                                            (+62) 123-321-543
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-card">
+                                    <div>
+                                        <img src="assets/images/icons/contact/02.png" alt="Icon" class="max-w-full h-auto">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Email : 
+                                        </p>
+                                        <a href="mailto:hockeys@support.com" class="inline-block">
+                                            hockeys@support.com
+                                        </a> 
+                                    </div>
+                                </div>
+                                <div class="contact-card">
+                                    <div>
+                                        <img src="assets/images/icons/contact/03.png" alt="Icon" class="max-w-full h-auto">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Location : 
+                                        </p> 
+                                        <h4>152/1 Mohakhali Wireless Gate</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-start-1 col-end-13 xl:col-start-6 xl:col-end-13">
+                            <form class="contact-area-form">
+                                <div class="grid sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="name">Your Name</label>
+                                        <input type="text" id="name" placeholder="Enter your full name">
+                                    </div>
+                                    <div>
+                                        <label for="email">Your Email</label>
+                                        <input type="email" id="email" placeholder="Enter your full name">
+                                    </div>
+                                    <div>
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" placeholder="Enter your subject">
+                                    </div>
+                                    <div>
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+                                    </div>
+                                </div>
+                                <div class="mt-4 xl:mt-6 mb-4 xl:mb-8">
+                                    <label>Message</label>
+                                    <textarea placeholder="Write your message"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="primary-button py-4 w-full">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="s-media">
+                        <h4>Social Media</h4>
+                        <div>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Content Ends Here -->
+            </div>
+        </section>
+        <!-- Contact Area Ends Here -->
     </main>
     <!-- Main Content Ends Here --> 
 
