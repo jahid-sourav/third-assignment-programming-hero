@@ -59,7 +59,7 @@
                 @apply text-tertiary-color;
             }
             .primary-button{
-                @apply py-3 xl:py-4 px-4 xl:px-6 bg-tertiary-color border border-tertiary-color rounded-lg text-white text-base xl:text-xl font-bold duration-500 ease-in-out hover:bg-white hover:text-tertiary-color;
+                @apply py-3 xl:py-4 px-4 xl:px-6 bg-tertiary-color border border-tertiary-color rounded-lg text-white text-base xl:text-xl font-bold duration-500 ease-in-out hover:bg-white hover:text-tertiary-color inline-block;
             }
             .section-gap{
                 @apply pt-10 xl:pt-[100px];
@@ -84,6 +84,18 @@
             }
             .progress-card-description{
                 @apply text-[#13131899] font-normal text-sm sm:text-base mx-auto xl:max-w-[250px];
+            }
+            .program-card{
+                @apply p-4 xl:px-10 xl:pb-10 xl:pt-[96px] rounded-2xl bg-no-repeat bg-cover bg-center duration-500 ease-in-out hover:scale-[1.01];
+            }
+            .program-card-lg{
+                @apply xl:pt-[207px];
+            }
+            .program-card-title{
+                @apply text-white text-lg xl:text-2xl font-extrabold;
+            }
+            .program-card-description{
+                @apply mt-3 mb-4 xl:mt-4 xl:mb-6 text-white text-sm xl:text-base font-medium lg:max-w-[500px];
             }
         }
     </style>
@@ -295,6 +307,68 @@
             </div>
         </section>
         <!-- Progress Area Ends Here -->
+
+        <!-- Program Area Starts Here -->
+        <section class="section-gap">
+            <div class="container mx-auto">
+                <!-- Section Header Starts Here -->
+                <div class="section-header">
+                    <h2 class="section-header-title">Program Sections</h2>
+                    <p class="section-header-description">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                    </p>
+                </div>
+                <!-- Section Header Ends Here -->
+
+                <!-- Section Content Starts Here -->    
+                <div class="grid grid-cols-12 gap-6">
+                    <div class="col-start-1 col-end-13 sm:col-start-1 sm:col-end-7">
+                        <div class="program-card bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.2)),url('assets/images/program/01.png')]">
+                            <h4 class="program-card-title">
+                                Junior Program
+                            </h4>
+                            <p class="program-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                            </p>
+                            <a href="javascript:void(0)" class="primary-button py-2">
+                                Register Now!
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-start-1 col-end-13 sm:col-start-7 sm:col-end-13">
+                        <div class="program-card bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.2)),url('assets/images/program/02.png')]">
+                            <h4 class="program-card-title">
+                                Teenager Program
+                            </h4>
+                            <p class="program-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                            </p>
+                            <a href="javascript:void(0)" class="primary-button py-2">
+                                Register Now!
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-start-1 col-end-13 xl:col-start-1 xl:col-end-13">
+                        <div class="program-card program-card-lg bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.2)),url('assets/images/program/03.png')]">
+                            <h4 class="program-card-title">
+                                Professional Program
+                            </h4>
+                            <p class="program-card-description">
+                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                            </p>
+                            <a href="javascript:void(0)" class="primary-button py-2">
+                                Register Now!
+                            </a>
+                        </div>
+                    </div>
+                </div>              
+                <!-- Section Content Ends Here -->                  
+            </div>
+        </section>
+        <!-- Program Area Ends Here -->
     </main>
     <!-- Main Content Ends Here --> 
 
