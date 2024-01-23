@@ -173,6 +173,27 @@
             .s-media a:last-child{
                 @apply me-0;
             }
+            .footer h3{
+                @apply text-white text-2xl xl:text-3xl font-extrabold mb-4 text-center lg:text-left;
+            }
+            .footer-text{
+                @apply mb-3 xl:mb-6 mx-auto lg:mx-0 max-w-[80%] sm:max-w-[100%] lg:max-w-[80%] xl:max-w-[350px] text-[#ffffff99] text-sm xl:text-base font-medium text-center lg:text-left;
+            }
+            .footer-icon{
+                @apply text-base xl:text-2xl text-[#FF4240];
+            }
+            .footer-text-normal{
+                @apply text-[#ffffff99] text-base xl:text-base font-medium;
+            }
+            .footer-heading{
+                @apply text-white xl:text-lg font-bold mb-4;
+            }
+            .footer-list{
+                @apply space-y-3;
+            }
+            .footer-list a{
+                @apply text-[#ffffff99] inline-block xl:text-base font-medium duration-500 ease-in-out hover:text-tertiary-color;
+            }
         }
     </style>
     <!-- Tailwind CSS Layer Ends Here -->
@@ -1008,9 +1029,75 @@
     <!-- Main Content Ends Here --> 
 
     <!-- Footer Starts Here --> 
-    <footer class="px-3 xl:px-5">
-
+    <footer class="px-3 xl:px-5 mt-10 xl:mt-24 bg-[#131318] py-10 xl:py-24 footer">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-12 gap-6 w-full">
+                <div class="col-start-1 col-end-13 sm:col-start-1 sm:col-end-6 xl:col-start-1 xl:col-end-6">
+                    <div>
+                        <h3>Get In Touch</h3>
+                        <p class="footer-text">
+                            Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                        </p>
+                        <div class="gap-4 flex items-center justify-center lg:justify-start mb-3">
+                            <span class="footer-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <span class="footer-text-normal">
+                                hockeys@support.com
+                            </span>
+                        </div>
+                        <div class="gap-4 flex items-center justify-center lg:justify-start">
+                            <span class="footer-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <span class="footer-text-normal">
+                                (+62) 123-321-543
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-1 col-end-13 sm:col-start-6 sm:col-end-10 xl:col-start-6 xl:col-end-11">
+                    <div class="grid grid-cols-2">
+                        <div class="text-center sm:text-left">
+                            <h4 class="footer-heading">Company</h4>
+                            <ul class="footer-list">                               
+                                <li><a href="javascript:void(0)">About us</a></li>
+                                <li><a href="javascript:void(0)">Leadership</a></li>
+                                <li><a href="javascript:void(0)">Careers</a></li>
+                                <li><a href="javascript:void(0)">News & Article</a></li>
+                                <li><a href="javascript:void(0)">Legal Notice</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center sm:text-right lg:text-left">
+                            <h4 class="footer-heading">Support</h4>
+                            <ul class="footer-list">                               
+                                <li><a href="javascript:void(0)">Help Center</a></li>
+                                <li><a href="javascript:void(0)">FAQ</a></li>
+                                <li><a href="javascript:void(0)">Ticket Support</a></li>
+                                <li><a href="javascript:void(0)">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-1 col-end-13 sm:col-start-10 sm:col-end-13 xl:col-start-11 xl:col-end-13">
+                    <div class="text-center sm:text-left">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul class="footer-list">                               
+                            <li><a href="javascript:void(0)">Academy</a></li>
+                            <li><a href="javascript:void(0)">Group Lesson</a></li>
+                            <li><a href="javascript:void(0)">Private Lesson</a></li>
+                            <li><a href="javascript:void(0)">Hockeys for kids</a></li>
+                            <li><a href="javascript:void(0)">Hockeys for Adult</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Footer Ends Here --> 
 </body>
 </html>
+
+
+
+
